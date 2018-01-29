@@ -1,7 +1,7 @@
 
 # users_organizations-microservice
 
-Microservice that contains user management for Athenea project. Build on top of:
+Microservice that contains organizations user management for Athenea project. Build on top of:
 
  - CXF (JAX-WS)
  - Spring
