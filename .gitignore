@@ -1,3 +1,4 @@
 /.idea
 /Users
 *.iml
+/.travis.yml
