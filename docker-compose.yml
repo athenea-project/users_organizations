@@ -22,7 +22,7 @@ services:
       ports:
         - "8080:8080"
       volumes:
-        - ./target/users-1.0-SNAPSHOT.war:/usr/local/tomcat/webapps/users-microservice.war
+        - ./target/users_organizations-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/users-microservice.war
       links:
         - db:db
       depends_on:
