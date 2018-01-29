@@ -19,6 +19,11 @@
 	</jaxws:endpoint>
 -->
 
+	<!--
+		<jaxws:endpoint implementor="ws.UserResourceServiceImpl" address="/UserResourceServiceImplPort">
+
+	-->
+
 	<jaxws:endpoint implementor="ws.UserResourceServiceImpl" address="/UserResourceServiceImplPort">
 	</jaxws:endpoint>
 
