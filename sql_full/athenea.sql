@@ -1,0 +1,31 @@
+CREATE DATABASE IF NOT EXISTS `ATHENEA`  DEFAULT CHARACTER SET utf8;
+USE `ATHENEA`;
+
+GRANT ALTER, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX
+ON ATHENEA.*
+TO athenea@'%'
+IDENTIFIED BY 'athenea';
+
+--
+-- Table structure for tables 'USER'
+--
+
+DROP TABLE IF EXISTS `STUDENT`;
+
+ SET @saved_cs_client = @@character_set_client;
+ SET character_set_client = utf8;
+
+CREATE TABLE `USER` (
+  `EMAIL`	VARCHAR(40)  NOT NULL,
+  `NAME`	VARCHAR(30)  NOT NULL,
+  `USERNAME`	VARCHAR(30)  NOT NULL UNIQUE,
+  `PASSWORD`	VARCHAR(20) NOT NULL,
+  `PHONE_NUMBER`	INT(9),
+  PRIMARY KEY (`EMAIL`)
+)
+
+
+ ENGINE = InnoDB
+ DEFAULT CHARSET = utf8;
+ SET character_set_client = @saved_cs_client;
+
