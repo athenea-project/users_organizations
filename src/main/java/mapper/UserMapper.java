@@ -16,7 +16,7 @@ public interface UserMapper {
    * Get all Users
    * @return every user in a List
    */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS")
   List<UserVO> getUsers();
 
   /**
@@ -24,7 +24,7 @@ public interface UserMapper {
    * @param email email of the User (primary key)
    * @return a single User
    */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER WHERE EMAIL = #{email}")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS WHERE EMAIL = #{email}")
   UserVO getUserByEmail(@Param("email") String email);
   
   /**
@@ -32,7 +32,7 @@ public interface UserMapper {
    * @param username email of the User (primary key)
    * @return a single User
    */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER WHERE USERNAME = #{username}")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS WHERE USERNAME = #{username}")
   UserVO getUserByUsername(@Param("username") String username);
 
   /**
@@ -40,7 +40,7 @@ public interface UserMapper {
    * @param name name of the User 
    * @return a single User
    */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER WHERE NAME = #{name}")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS WHERE NAME = #{name}")
   List<UserVO> getUserByName(@Param("name") String name);
 
   /** 
@@ -48,7 +48,7 @@ public interface UserMapper {
   * @param phoneNumber phone number of the User
   * @return a single User
   */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER WHERE PHONE_NUMBER = #{phone_number}")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS WHERE PHONE_NUMBER = #{phone_number}")
   UserVO getUserByPhoneNumber(@Param("phone_number") int phoneNumber);
 
     /** 
@@ -57,7 +57,7 @@ public interface UserMapper {
   * @param password password of the User
   * @return a single User
   */
-  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USER WHERE username = #{username} AND password = #{password}")
+  @Select("SELECT EMAIL, NAME, USERNAME, PHONE_NUMBER FROM USERS_ORGANIZATIONS WHERE username = #{username} AND password = #{password}")
   UserVO getUserByUsernamePass(@Param("username") String username, @Param("password") String password);
 
   /**
