@@ -21,7 +21,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<url>http://localhost:8080/athenea/users_organizations</url>
+					<url>http://localhost:8081/athenea/users_organizations</url>
 					<server>TomcatServer</server>
 					<path>/users_organizations-microservice</path>
 				</configuration>
