@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserDAO {
     /**
    * Get an user from an email
    *
-   * @param email of the User (primary key)
+   * @param username of the User (primary key)
    * @return a UserVO
    */
   @Override
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserDAO {
     /**
    * Get an user from an email
    *
-   * @param email of the User (primary key)
+   * @param number of the User (primary key)
    * @return a UserVO
    */
   @Override
@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserDAO {
     /**
    * Get an user from an email
    *
-   * @param email of the User (primary key)
+   * @param name of the User (primary key)
    * @return a UserVO
    */
   @Override
